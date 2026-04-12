@@ -1,20 +1,28 @@
 # LeetCode
 Practice Leetcode Python Solutions
 
-## LeetcodePythonPractice
+## Solutions Included
 
-Small Python project with solution and tests for the "Rearrange Spaces Between Words" problem.
+### 1. Rearrange Spaces Between Words
+- **File:** `rearrange_spaces.py`
+- **Alternate Implementation:** `my_reorderspaces.py`
+- **Tests:** `tests/test_rearrange_spaces.py`
+- **Description:** Rearranges spaces between words evenly, with extra spaces placed at the end.
 
-### Usage
+### 2. Convert a Number to Hexadecimal
+- **File:** `toHex.py`
+- **Description:** Converts a 32-bit signed integer to its hexadecimal representation.
 
-Run the module directly:
+## Usage
+
+Run tests for Rearrange Spaces:
 
 ```bash
-python3 -m LeetcodePythonPractice.rearrange_spaces
+python3 -m unittest discover -s tests
 ```
 
-Run tests:
+Run toHex solution:
 
 ```bash
-python3 -m unittest discover -s LeetcodePythonPractice/tests
+python3 toHex.py
 ```
