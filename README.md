@@ -13,6 +13,18 @@ Practice Leetcode Python Solutions
 - **File:** `toHex.py`
 - **Description:** Converts a 32-bit signed integer to its hexadecimal representation.
 
+### 3. Add Binary
+- **File:** `addbinary.py`
+- **Description:** Adds two binary strings and returns their sum as a binary string.
+
+### 4. Convert to Excel Column Title
+- **File:** `converttotitle.py`
+- **Description:** Converts a column number to its corresponding Excel column title.
+
+### 5. Crawler Log Folder
+- **File:** `minOperations.py`
+- **Description:** Counts the minimum operations required to return to the main folder after executing log operations.
+
 ## Usage
 
 Run tests for Rearrange Spaces:
