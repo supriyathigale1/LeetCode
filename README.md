@@ -29,9 +29,17 @@ Practice Leetcode Python Solutions
 - **File:** `title_to_number.py`
 - **Description:** Converts an Excel column title to its corresponding column number.
 
-### 7. Crawler Log Folder
-- **File:** `min_operations.py`
-- **Description:** Counts the minimum operations required to return to the main folder after executing log operations.
+### 8. Find Words Containing Character
+- **File:** `find_words.py`
+- **Description:** Finds words in a list that contain a given character.
+
+### 9. Fizz Buzz
+- **File:** `fizz_buzz.py`
+- **Description:** Returns a list of strings representing numbers from 1 to n, with multiples of 3 and 5 replaced by "Fizz" and "Buzz".
+
+### 10. Repeated Substring Pattern
+- **File:** `repeated_substring.py`
+- **Description:** Checks if a string can be constructed by repeating a substring.
 
 ## Usage
 
