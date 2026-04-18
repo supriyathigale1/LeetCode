@@ -1,0 +1,16 @@
+def moving_avg_list(stream, k):
+    window = []
+    result = []
+    
+    for val in stream:
+        window.append(val)
+        
+        if len(window) > k:
+            window.pop(0)   # remove oldest
+        
+        avg = sum(window) / len(window)
+        result.append(avg)
+    
+    return result
+
+print(moving_avg_list([1, 2, 3, 4, 5], 3))
