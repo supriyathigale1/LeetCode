@@ -1,16 +1,29 @@
 def moving_avg_list(stream, k):
-    window = []
-    result = []
-    
+    """
+    Calculate moving average of a data stream with window size k.
+
+    Args:
+        stream: List of numbers representing the data stream
+        k: Window size for moving average
+
+    Returns:
+        List of moving averages for each position in the stream
+    """
+    window = []  # Sliding window to maintain last k elements
+    result = []  # Store moving averages
+
     for val in stream:
-        window.append(val)
-        
+        window.append(val)  # Add new value to window
+
+        # Maintain window size: remove oldest element if window exceeds size k
         if len(window) > k:
-            window.pop(0)   # remove oldest
-        
+            window.pop(0)  # Remove first (oldest) element
+
+        # Calculate average of current window
         avg = sum(window) / len(window)
-        result.append(avg)
-    
+        result.append(avg)  # Store the average
+
     return result
 
+# Example usage: moving average with window size 3
 print(moving_avg_list([1, 2, 3, 4, 5], 3))
