@@ -1,14 +1,21 @@
 #https://leetcode.com/problems/distribute-candies/description/?envType=problem-list-v2&envId=hash-table
+# Distribute Candies: Maximize distinct candy types Alice can eat
 class Solution:
     def distributeCandies(self, candyType: List[int]) -> int:
         # Get unique candy types
-        unique_candies = set(candyType)
+        c=set(candyType) # set of candies by each type
+        n=len(candyType)//2 #number of candies she can eat
+        print(f"Candy types {c} and number of candies {n}")
+        result=0
         
-        # Maximum candies Alice can eat
-        max_candies = len(candyType) // 2
-        
-        # She can eat at most min(unique types, max_candies)
-        # If unique types <= max_candies, she gets all unique types
-        # If unique types > max_candies, she gets max_candies different types
-        return min(len(unique_candies), max_candies)
+        # Count unique candy types
+        for x in c:
+            result=result+1
+        # Return minimum of unique types and max candies allowed
+        if n==result:
+            return result
+        elif n>result:
+            return result
+        else:
+            return n
         

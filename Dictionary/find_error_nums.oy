@@ -1,48 +1,27 @@
-# https://leetcode.com/problems/find-the-duplicate-number/
-# Problem: Find the Duplicate Number - Find both the duplicate and missing number in array
-# Note: File has .oy extension (should be .py)
-
 class Solution:
     def findErrorNums(self, nums: List[int]) -> List[int]:
-        \"""
-        Find both the duplicate number and the missing number in array from 1 to n.
-        Array should contain numbers 1 to n, but has one duplicate and one missing.
-        
-        Solution 1: In-place marking - Time O(n), Space O(1)
-        Solution 2: Sum-based - Time O(n), Space O(1)
-        
-        Args:
-            nums: List containing numbers from 1 to n with one duplicate and one missing
-        
-        Returns:
-            [duplicate, missing]
-        \"""
         # Solution 1: In-place marking - use array indices to mark seen numbers
         i = 0
         n = len(nums)
-        
-        # Rearrange array so nums[i-1] == i for each correct position
+        #time complexity: O(n),space complexity: O(1)
         while i < n:
             correct_idx = nums[i] - 1
             if nums[i] != nums[correct_idx]:
-                # Swap to correct position
                 nums[i], nums[correct_idx] = nums[correct_idx], nums[i]
             else:
                 i += 1
 
-        # Find the number in wrong position (duplicate indicator)
         for i in range(n):
             if nums[i] != i + 1:
                 return [nums[i], i + 1]
        
         # Solution 2: Sum-based approach (alternative)
+        #time complexity: O(n)
         n = len(nums)
 
-        # Calculate expected sum and actual sum
         expected_sum = n * (n + 1) // 2
         actual_sum = sum(nums)
 
-        # Find duplicate using Counter
         c = Counter(nums)
 
         dup = -1
@@ -51,8 +30,6 @@ class Solution:
                 dup = k
                 break
 
-        # missing = expected_sum - (actual_sum - dup)
-        # because actual_sum = expected_sum - missing + dup
         missing = expected_sum - (actual_sum - dup)
 
         return [dup, missing]
