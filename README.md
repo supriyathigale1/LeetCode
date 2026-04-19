@@ -101,17 +101,83 @@ Practice Leetcode Python Solutions
 - **File:** `Set/idempotency_payment.py`
 - **Description:** Implements idempotent payment processing using a set to track processed payment IDs.
 
-### 26. Retry Logic with Exponential Backoff
+### 26. Distribute Candies
+- **File:** `Set/distribute_candies.py`
+- **Description:** Maximizes the number of distinct candy types Alice can eat. Alice eats n/2 candies from n total candies.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+### 27. Retry Logic with Exponential Backoff
 - **File:** `Opex/retry_logic.py`
 - **Description:** Implements retry logic with configurable retries and delay between attempts.
 
-### 27. Bronze Layer (Medallion Architecture)
+### 28. Bronze Layer (Medallion Architecture)
 - **File:** `Medallion/bronze_layer.py`
 - **Description:** Code for the bronze layer in medallion architecture.
 
-### 28. Silver Layer (Medallion Architecture)
+### 29. Silver Layer (Medallion Architecture)
 - **File:** `Medallion/silver_layer.py`
 - **Description:** Code for the silver layer in medallion architecture.
+
+## Hash Table / Dictionary Solutions
+
+### 30. Find the Duplicate and Missing Number
+- **File:** `Dictionary/find_error_nums.oy`
+- **Description:** Finds both the duplicate number and the missing number in an array containing 1 to n.
+- **Approach:** In-place marking using array indices as hash table.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(1)
+
+### 31. Jewels and Stones
+- **File:** `Dictionary/jewels_in_stones.py`
+- **Description:** Counts how many stones are jewels (case-sensitive character matching).
+- **Time Complexity:** O(n + m)
+- **Space Complexity:** O(n)
+
+### 32. Longest Harmonious Subsequence
+- **File:** `Dictionary/harmonious_subsequence.py`
+- **Description:** Finds the longest harmonious subsequence where elements differ by exactly 1.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+### 33. Minimum Index Sum of Two Lists
+- **File:** `Dictionary/least_index_sum.py`
+- **Description:** Finds restaurants appearing in both lists with minimum index sum.
+- **Time Complexity:** O(n + m)
+- **Space Complexity:** O(n + m)
+
+### 34. Shortest Completing Word
+- **File:** `Dictionary/shortest_completing_words.py`
+- **Description:** Finds the shortest word containing all letters from license plate (case-insensitive).
+- **Time Complexity:** O(n*m)
+- **Space Complexity:** O(1)
+
+### 35. Degree of an Array (Shortest Subarray)
+- **File:** `Dictionary/shortest_subarray.py`
+- **Description:** Finds the length of shortest subarray with the same degree as input array.
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+## Array Solutions (continued)
+
+### 36. Array Partition I
+- **File:** `Arrays/pair_arrays.py`
+- **Description:** Returns the maximum sum of minimums in pairs from a sorted array.
+- **Time Complexity:** O(n log n) due to sorting
+- **Space Complexity:** O(1)
+
+### 37. Buddy Strings
+- **File:** `Arrays/buddy_strings.py`
+- **Description:** Determines if two strings are buddy strings (can swap at most one pair to match).
+- **Time Complexity:** O(n)
+- **Space Complexity:** O(n)
+
+### 38. Next Greater Element I
+- **File:** `Arrays/next_greater_element.py`
+- **Description:** Finds the next greater element for each element in nums1 as it appears in nums2.
+- **Approach:** Monotonic stack for efficient O(n) solution.
+- **Time Complexity:** O(n + m)
+- **Space Complexity:** O(m)
 
 ## Usage
 
